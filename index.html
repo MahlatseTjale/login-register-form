@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <!-- MONTSERRAT FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+    
+        <!--STYLE CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+</head>
+<body> 
+    
+    <div class="sign-in-container">
+        <div class="sign-in-header">
+             <h1 id="header">Welcome</h1>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div class="login-form" id="login-form"> 
+            <p class="input-descr">Username</p>
+            <div class="input-container">
+                <input type="text" placeholder="Enter Username">
+                <i class="fa fa-user icon"></i>
+            </div>
+
+            <p class="input-descr">Password</p>
+            <div class="input-container">
+                <input type="password" placeholder="Enter password">
+                <i class="fa fa-lock icon"></i>
+            </div>
+
+            <button type="submit" class="sign-in-button">Login</button>
+            
+            <div class="forgot-password-container">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div class="signup-form" id="signup-form" > 
+            <p class="input-descr">Username</p>
+            <div class="input-container">
+                <input type="text" placeholder="Enter Username" id="username">
+                <i class="fa fa-user icon"></i>
+                <i class="fa fa-check-circle success"></i>
+                <i class="fa fa-exclamation-circle failure"></i>
+                <p class="error-message">Invalid Username</p>
+            </div>
+
+            <p class="input-descr">Email</p>
+            <div class="input-container">
+                <input type="email" placeholder="abc@efg.com" id="email">
+                <i class="fa fa-envelope icon"></i>
+                <i class="fa fa-check-circle success"></i>
+                <i class="fa fa-exclamation-circle failure"></i>
+                <p class="error-message">Invalid Email</p>
+            </div>
+
+            <p class="input-descr">Password</p>
+            <div class="input-container">
+                <input type="password" placeholder="Enter password" id="password">
+                <i class="fa fa-lock icon"></i>
+                <i class="fa fa-check-circle success"></i>
+                <i class="fa fa-exclamation-circle failure"></i>
+                <p class="error-message">Invalid Password</p>
+            </div>
+
+            <button type="submit" class="sign-up-button" onclick="checkInputs()">Sign up</button>
+    
+        </div>
+
+        <!-- LOGIN/REGISTER BUTTON SLIDER -->
+        <div class="login-signup-btns-container">
+            <div class="btn-toggle" id="btn-toggle"></div>
+            <button type="button" id="login-btn" onclick="loginTab()">LOGIN</button>
+            <button type="button" id="register-btn" onclick="registerTab()">REGISTER</button>    
+        </div>
+    </div>
+
+
+
+    <!--JQUERY JS-->
+    <script src="js/jquery.js"></script>
+
+    <!--BOOTSRAP JS -->
+    <script src="js/Bootstrap/bootstrap.min.js"></script>
+
+    <!--FONTAWSOME-->
+    <script src="https://kit.fontawesome.com/5a0cd6b29f.js" crossorigin="anonymous"></script>
+
+
+    <!--CUSTOM JS-->
+    <script src="js/custom.js"></script>
+
+    <!-- input validation js -->
+    <script src="js/inputValidation.js"></script>
+</body>
+</html>

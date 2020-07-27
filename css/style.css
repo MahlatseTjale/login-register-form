@@ -1,0 +1,233 @@
+body{
+    background:#f5f4f4 ;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* MAIN CONTAINER */
+.sign-in-container{  
+    box-sizing: border-box; 
+    width: 320px;
+    height: 600px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgb(207, 207, 207);
+}
+
+/* HEADER CONTAINER */
+.sign-in-header{
+    width: 100%;
+    height: 120px;
+    padding-top: 18px;
+    /* background-image: url(../img/avi-richards-Z3ownETsdNQ-unsplash.jpg); */
+    background: linear-gradient( 90deg,#d31574,#fd1d1d, #fcb045);
+
+    background-size: cover;
+    background-position-Y: -40px;
+    background-color: #fdfdfd;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+/* HEADER TEXT */
+h1{
+    margin-bottom: 0;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+
+/* LOGIN FORM CONTAINER */
+.login-form{
+    padding: 25px 30px;
+    transition: .5s;
+    position: relative;
+}
+
+/* SIGNUP / REGISTER FORM CONTAINER */
+.signup-form{
+    position: absolute;
+    top: 145px;
+    left: 350px;
+    width: 270px;
+    transition: .5s;
+}
+
+/* INPUT NAME OR DESCRIPTION */
+.input-descr{
+    margin-left: 2px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* LOGIN AND SIGNUP / REGISTER INPUT STYLING */
+.login-form input, .signup-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background: #f7f7f7 ;
+    height: 40px;
+    padding: 0 40px 0 40px;
+    margin: 5px 0 30px 0;   
+}
+
+/* LOGIN AND SIGNUP / REGISTER FOCUS STYLING */
+.login-form input:focus, .signup-form input:focus{
+    border:none;
+    border-bottom: 1px solid rgb(187, 187, 187);    
+}
+
+.input-container{
+    position: relative;
+}
+
+/* INPUT TYPE ICON */
+.icon{
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: rgb(51, 51, 51)
+}
+
+/* SUCCESS ICON */
+.success{
+    color: rgb(58, 204, 14);
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    display: none;
+}
+
+/* ERROR ICON */
+.failure{
+    display: none;
+    color: rgb(238, 13, 13);
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    
+}
+
+/* ERROR MESSAGE */
+.error-message{
+    position: absolute;
+    top: 47px;
+    left: 20px;
+    color: rgb(238, 13, 13) ;
+    font-size: 10px;
+    display: none;
+}
+
+
+/* LOGIN BUTTON */
+.login-form button {
+    background: linear-gradient( 90deg,#d31574,#fd1d1d, #fcb045);
+    /* linear-gradient( 45deg,red, rgb(255, 187, 0)); */
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    color: floralwhite;
+    font-size: 15px;
+    margin: 20px 0;
+    transition: .3s;
+    font-weight: 600;
+    
+}
+
+/* SIGNUP / REGISTER BUTTON */
+.signup-form button {
+    background-image: linear-gradient( 45deg,red, rgb(255, 187, 0));
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    color: floralwhite;
+    font-size: 15px;
+    margin: 25px 0 0 0;
+    font-weight: 500;
+    
+}
+
+/* LOGIN AND REGISTER BUTTON HOVER */
+.login-form button:hover, .signup-form button:hover {
+    background: rgb(51, 51, 51) ;
+    transition: .5s;
+}
+
+/* FORGOT PASSWORD CONTAINER */
+.forgot-password-container{
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    
+}
+
+/* LOGIN / REGISTER TAB TOGGLER CONTAINER */
+.login-signup-btns-container{
+    width: 220px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(41, 41, 41);
+    position: absolute;
+    top: 540px;
+    left:50px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 1px rgb(238, 238, 238);
+}
+
+/* LOGIN / REGISTER TAB TOGGLER BUTTON */
+.login-signup-btns-container button{
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 30PX;
+   margin: 0;
+   padding: 10px 20PX;
+}
+.login-signup-btns-container button:hover{
+    background: none;
+}
+
+/* LOGIN / REGISTER TAB TOGGLER SLIDER*/
+.btn-toggle{
+    top: 0;
+    left: 0px;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient( 90deg,#d31574,#fd1d1d, #fcb045);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.check-box{
+    height: 1px;
+    width: 1px;
+    position: relative;
+    outline: none;
+    border: none;
+
+}
+
+.signup-form span{
+    font-size: 10px;
+    font-weight: bold;
+    bottom: 110px;
+    position: absolute;
+    left: 55px;
+}
